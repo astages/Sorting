@@ -8,21 +8,37 @@ template <class T> void bubble(T *, int, int);
 using namespace std;
 int main(int argc, char *argv[])
 {
-    int i, N = atoi(argv[1]), KaDaryt = atoi(argv[2]);
-    int *a = new int[N];
-    if (KaDaryt) // Atsitiktinai sugeneruoja N skaičių intervale: 1,...,1000.
-      for (i = 0; i < N; i++)
+    //int i, N = atoi(argv[1]), KaDaryt = atoi(argv[2]);
+	int i 
+	int N = 100, int KaDaryt = 1;
+    int *a = new int[N]; //isskiriame vietos
+    if (KaDaryt==1) // Atsitiktinai sugeneruoja N skaičių intervale: 1,...,1000.
+      for (i = 0; i < N; i++) // cia else if 2 truksta. 1 - atsitiktinis, 2 - geriausias, 3 - blogiausias, visa kita- pats
         a[i] = 1000*(1.0*rand()/RAND_MAX);
-    else // Savo nuožiūra įvedame skaičius. Norėdami baigti įvedimą, įvedame bet kokį simbolį - ne skaičių.
+		else if 
+		for........//geriausias masyvas sugeneruoja
+		else if
+		for.................//blogiausias masyvas sugeneruoja
+    else // Savo nuožiūra įvedame skaičius. Norėdami baigti įvedimą, įvedame bet kokį simbolį - ne skaičių. cia, jei ranka suvedineti
       { N = 0; while (cin >> a[N]) N++; }
-    cout << "Įvestas skaičių masyvas yra:" << endl;
+    cout << "Įvestas skaičių masyvas yra:" << endl;//cia isvedimas
+	
     for (i = 0; i < N; i++) cout << a[i] << " ";
     cout << endl;
-    selection(a, 0, N-1);
+    selection(a, 0, N-1); //kreipimasis
     cout << "Surūšiuotas skaičių masyvas yra:" << endl;
     for (i = 0; i < N; i++) cout << a[i] << " ";
     cout << endl;
+	cout <<"Atliko lyginimo operaciju arba L(N)="<<endl;
+	cout <<"Atliko sukeitimo operaciju arba S(N)="<<endl;
+	cout <<"Atliko is viso operaciju arba L(N)+S(N)="<<endl;
+	//analogiskai su 
+	 insertion(a, 0, N-1); //kreipimasis
+	 //analogiskai su 
+	 bubble (a, 0, N-1); //kreipimasis
+	 
 }
+
 // Sukeičia elementus vietomis
 template <class T>
   void exch(T &A, T &B)
